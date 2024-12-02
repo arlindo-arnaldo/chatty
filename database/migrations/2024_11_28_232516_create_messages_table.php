@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('content')->nullable();
             $table->boolean('read')->default(false);
             $table->string('type')->nullable();
-            $table->string('file');
+            $table->string('file')->nullable();
             $table->timestamps();
         });
     }
